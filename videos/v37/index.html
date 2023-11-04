@@ -3,61 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excersize 4</title>
+    <title>Excersize 5</title>
     <style>
-        /* :root{
-            --primarycolor:rgb(21, 21, 186);
-            --textcolor:white;
-            --secondarycolor:rgb(109, 109, 199);
-        } */
-        :root{
-            --primarycolor:rgb(186, 21, 87);
-            --textcolor:white;
-            --secondarycolor:rgb(199, 109, 124);
-        }
-        @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Oswald&family=Poppins:wght@400;500;600&family=Roboto:wght@300&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
+        *{
+            margin: 0;padding: 0;
         }
         body{
-            background-color: var(--secondarycolor);
+            background-color: gray;
         }
-        nav {
-            background-color: var(--primarycolor);
-            padding: 12px 0px;
-            font-family: 'Roboto', sans-serif;
+        .nav{
+            background-color: rgb(185, 141, 227);
+            display: flex;
         }
-
-        ul li {
+        .ul1{
+            display: flex;
             list-style: none;
+            padding: 0 10px 0 10px;
+            margin-left: 10px;
         }
-
-        ul li {
+        li{
+            margin-left: 10px;
+        }
+        .boxes{
+            display: flex;
+            height: 144px;
+            width: 100%;
+            background-color: antiquewhite;
+            padding-top: 20px;
+            margin-top: 30px;
+        }
+        .box1{
             display: inline;
-            padding: 12px;
-            font-weight: bolder;
-            color: var(--textcolor);
+            height: 100px;
+            width: 150px;
+            background-color: white;
+            margin-left: 50px;
         }
-        ul li a{
-            color: var(--textcolor);
-            text-decoration: none;
+        .box2{
+            display: inline;
+            margin-right: 80px;
+            height: 100px;
+            width: 150px;
+            background-color: white;
+            margin-left: 250px;
         }
+        .hi{
+         text-align: center; 
+         height: 25px;
+         width: 100%;  
+        }
+        .hyy{
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+      
     </style>
 </head>
 <body>
-    <header>
-        <nav>'
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Service</a></li>
-                <li><a href="/">Development</a></li>
-                <li><a href="/">Contact us</a></li>
+    <header class="kk">
+        <nav class="nav">
+            <ul class="ul1">
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Carriee</li>
+                <li>Contact us</li>
             </ul>
         </nav>
     </header>
+    <section class="con">
+        <div class="boxes">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </section class="hi">
+    <p class="hyy">WElcome to Web development Course</p>
 </body>
-
 </html>

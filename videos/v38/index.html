@@ -3,85 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excersize 5</title>
+    <title>Css FlexBox</title>
     <style>
-        *{
-            margin: 0;padding: 0;
-        }
-        body{
-            background-color: gray;
-        }
-        .nav{
-            background-color: rgb(185, 141, 227);
+        .container{
+            border: 2px solid blue;
             display: flex;
+            height: 80vh;
+            /* Justify Content in Alwasy In Flex Direction and after see maain Axix */
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* align-content: center; */
+            flex-flow: row wrap;
+            gap: 30px;
+
         }
-        .ul1{
-            display: flex;
-            list-style: none;
-            padding: 0 10px 0 10px;
-            margin-left: 10px;
+        .iteam{
+            height: 30px;
+            width: 50px;
+            background-color: rgb(160, 110, 163);
+            border: 2px solid red;
+            /* margin: 10px; */
+            /* flex-grow: 1; */
         }
-        li{
-            margin-left: 10px;
+        .order-1{
+            order: 1;
+        } 
+        .order-2{
+            order: 2;
+        } 
+        .order-3{
+            order: 3;
+        } 
+        .it2{
+            /* flex-grow: 123654; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
         }
-        .boxes{
-            display: flex;
-            height: 144px;
-            width: 100%;
-            background-color: antiquewhite;
-            padding-top: 20px;
-            margin-top: 30px;
-        }
-        .box1{
-            display: inline;
-            height: 100px;
-            width: 150px;
-            background-color: white;
-            margin-left: 50px;
-        }
-        .box2{
-            display: inline;
-            margin-right: 80px;
-            height: 100px;
-            width: 150px;
-            background-color: white;
-            margin-left: 250px;
-        }
-        .hi{
-         text-align: center; 
-         height: 25px;
-         width: 100%;  
-        }
-        .hyy{
-            margin-top: 20px;
-            margin-left: 10px;
-            margin-right: 10px;
-            padding: 25px;
-            text-align: center;
-            border: 1px solid red;
-            border-radius: 10px;
-        }
-      
     </style>
 </head>
 <body>
-    <header class="kk">
-        <nav class="nav">
-            <ul class="ul1">
-                <li>Home</li>
-                <li>About</li>
-                <li>Service</li>
-                <li>Carriee</li>
-                <li>Contact us</li>
-            </ul>
-        </nav>
-    </header>
-    <section class="con">
-        <div class="boxes">
-            <div class="box1"></div>
-            <div class="box2"></div>
+    <main>
+        <div class="container">
+            <div class="iteam it2">1</div>
+            <div class="iteam">2</div>
+            <div class="iteam">3</div>
+            <div class="iteam order-1">4</div>
+            <div class="iteam">5</div>
         </div>
-    </section class="hi">
-    <p class="hyy">WElcome to Web development Course</p>
+    </main>
 </body>
 </html>
