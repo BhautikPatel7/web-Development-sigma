@@ -3,38 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Transforms</title>
+    <title>Excersize 6 Solution</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        .logo{
+            width: 166px;
+            
+          
         }
-        .box{
-            height: 50px;
-            width: 50px;
-            background-color: aquamarine;
-            border: 2px solid black;
+        .logo img{
+            width: 66px;
+        }
+        nav{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            /* transform: rotatez(40deg); */
-            /* transform:skew(5deg); */
-            /* transform: scale(1.6); */
-            /* transform: translateY(100px) skew(25deg) translateX(-34%); */
-            transform: rotate(0.125turn);
         }
-        .container{
-            width: 100vw;
-            height: 80vw;
-            border: 2px solid rgb(80, 72, 166);
+        .right ul{
+            display: flex;
+            gap: 34px;
+        }
+        .right ul li{
+           list-style: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            Box
-        </div>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="Logo Of Site">
+               
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>
 </body>
 </html>
